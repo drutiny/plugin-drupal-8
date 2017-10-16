@@ -1,0 +1,31 @@
+{
+    "name": "drutiny/plugin-drupal-8",
+    "type": "library",
+    "description": "Drupal 8 plugin for Drutiny",
+    "keywords": ["drupal", "audit", "drush", "ssh", "report"],
+    "license": "GPL-2.0",
+    "authors": [
+        {"name": "Sean Hamlin", "email": "iwiifm@gmail.com"},
+        {"name": "Josh Waihi", "email": "joshwaihi@gmail.com"}
+    ],
+    "support": {
+        "issues": "https://github.com/drutiny/plugin-drupal-8/issues",
+        "source": "https://github.com/drutiny/plugin-drupal-8"
+    },
+    "require": {
+        "drutiny/drutiny": "2.x",
+        "symfony/yaml": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drutiny\\Plugin\\Drupal8\\": "src/",
+            "DrutinyTests\\Plugin\\Drupal8\\": "tests/src/"
+        }
+    },
+    "bin": ["bin/drutiny"],
+    "require-dev": {
+        "phpunit/phpunit": "^5.0",
+        "squizlabs/php_codesniffer": "2.*",
+        "drupal/coder": "^8.2.0"
+    }
+}

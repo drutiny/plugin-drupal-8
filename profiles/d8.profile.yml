@@ -18,3 +18,7 @@ policies:
     Drupal-8:ShieldDisabled: {}
     Drupal-8:SimpleTestDisabled: {}
     Drupal-8:StatisticsDisabled: {}
+    Drupal-8:UpdateDisabled: {}
+    Drupal-8:User1LockDown: {}
+    Drupal-8:UserRegistrationAdminOnly: {}
+    Drupal-8:WebprofilerDisabled: {}

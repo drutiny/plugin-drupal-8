@@ -1,4 +1,4 @@
-catitle: Update
+title: Update
 name: Drupal-8:UpdateDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:

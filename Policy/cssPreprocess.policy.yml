@@ -11,8 +11,14 @@ success: CSS aggregation is enabled.
 failure: CSS aggregation is not enabled.
 parameters:
   collection:
+    type: string
     default: 'system.performance'
+    description: 'The config collection the config item belows to'
   key:
+    type: string
     default: 'css.preprocess'
+    description: ''
   value:
+    type: boolean
     default: True
+    description: ''

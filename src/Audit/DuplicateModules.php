@@ -29,6 +29,10 @@ CMD;
 
     $output = $sandbox->exec($command);
 
+    if (empty($output)) {
+      return TRUE;
+    }
+
     // Ignore modules where there are only 1 of them.
     $module_count = array_filter(Yaml::parse($output), function ($count) {
       return $count > 1;

@@ -1,4 +1,4 @@
-title: Update
+title: Update module is not installed
 name: Drupal-8:UpdateDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
@@ -13,5 +13,5 @@ failure: The Update module is currently enabled.
 parameters:
   module:
     type: string
-    description: The name of the module to ensure is disabled.
+    description: The name of the module to ensure is not installed.
     default: update

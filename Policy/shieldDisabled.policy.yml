@@ -1,4 +1,4 @@
-title: Shield disabled
+title: Shield module is not installed
 name: Drupal-8:ShieldDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
@@ -11,7 +11,7 @@ description: |
 remediation: |
   Disable shield through the shield user interface, set the config
   `shield.settings:user` to '' (blank), or uninstall the shield module.
-success: Shield is disabled.
+success: Shield is not installed.
 failure: Shield is enabled.
 parameters:
   module:

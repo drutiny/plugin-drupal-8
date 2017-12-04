@@ -1,4 +1,4 @@
-title: User registration
+title: User registration available to administrators only
 name: Drupal-8:UserRegistrationAdminOnly
 class: \Drutiny\Plugin\Drupal8\Audit\ConfigCheck
 tags:

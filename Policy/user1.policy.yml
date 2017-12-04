@@ -1,4 +1,4 @@
-title: "User #1"
+title: "Administrator login is locked down (uid:1)"
 name: Drupal-8:User1LockDown
 class: \Drutiny\Plugin\Drupal8\Audit\User1
 tags:
@@ -15,6 +15,11 @@ success: |
     - Email is set to {{email}}
     - Status is set to {{status}}
     - If remediation took place, then the password has been updated.
+warning: |
+  User #1 is not secure.
+  {{#errors}}
+    - {{ . }}
+  {{/errors}}
 failure: |
   User #1 is not secure.
   {{#errors}}

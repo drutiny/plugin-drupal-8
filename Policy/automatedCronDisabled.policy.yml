@@ -1,4 +1,4 @@
-title: Automated Cron module is disabled
+title: Automated Cron module is not installed
 name: Drupal-8:NoAutomatedCron
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
@@ -12,7 +12,7 @@ description: |
 remediation: |
   Disable the automated cron module and ensure cron is run via a system cron
   process such as `crontab` and using a non-web process such as drush.
-success: Automated Cron is disabled.
+success: Automated Cron is not installed.
 failure: Automated Cron is enabled.
 parameters:
   module:

@@ -1,4 +1,4 @@
-title: Devel
+title: Devel module is not installed
 name: Drupal-8:DevelDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
@@ -14,5 +14,5 @@ failure: The Devel module is currently enabled.
 parameters:
   module:
     type: string
-    description: The name of the module to ensure is disabled.
+    description: The name of the module to ensure is not installed.
     default: devel

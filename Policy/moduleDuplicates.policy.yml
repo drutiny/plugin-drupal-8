@@ -1,4 +1,4 @@
-title: Duplicate modules
+title: No duplicate modules found
 name: Drupal-8:DuplicateModules
 class: \Drutiny\Plugin\Drupal8\Audit\DuplicateModules
 tags:

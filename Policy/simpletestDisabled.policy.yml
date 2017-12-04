@@ -1,4 +1,4 @@
-title: Simpletest
+title: Simpletest module is not installed
 name: Drupal-8:SimpleTestDisabled
 class: \Drutiny\Plugin\Drupal8\Audit\ModuleDisabled
 tags:
@@ -13,5 +13,5 @@ failure: The Simpletest module is currently enabled.
 parameters:
   module:
     type: string
-    description: The name of the module to ensure is disabled.
+    description: The name of the module to ensure is not installed.
     default: simpletest

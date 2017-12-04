@@ -45,7 +45,7 @@ class User1 extends Audit implements RemediableInterface {
     }
 
     $sandbox->setParameter('errors', $errors);
-    return empty($errors);
+    return empty($errors) ? TRUE : Audit::WARNING;
   }
 
   public function remediate(Sandbox $sandbox)

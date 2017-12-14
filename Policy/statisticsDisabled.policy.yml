@@ -12,6 +12,7 @@ description: |
 remediation: "Disable the module: `drush pm-uninstall statistics -y`"
 success: The Statistics module is not currently enabled.
 failure: The Statistics module is currently enabled.
+warning: The Statistics module is currently enabled.
 parameters:
   module:
     type: string

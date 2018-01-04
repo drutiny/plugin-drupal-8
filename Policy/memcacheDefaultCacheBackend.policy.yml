@@ -27,7 +27,7 @@ parameters:
     type: string
     description: |
       The key in settings.php to check. Use dot syntax to traverse settings array.
-    default: memcache.default
+    default: cache.default
   value:
     type: string
     description: |

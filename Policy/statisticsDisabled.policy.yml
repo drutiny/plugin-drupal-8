@@ -18,4 +18,4 @@ parameters:
     type: string
     description: The name of the module to ensure is not installed.
     default: statistics
-max_severity: warning
+severity: normal

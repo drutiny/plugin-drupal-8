@@ -4,6 +4,7 @@ class: \Drutiny\Plugin\Drupal8\Audit\UntrustedRoles
 tags:
   - Best Practice
   - Security
+  - Drupal 8
 description: |
   Make sure administrative permissions has not been assigned to untrusted roles.
 remediation: |

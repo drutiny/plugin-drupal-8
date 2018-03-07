@@ -9,7 +9,7 @@ description: |
 remediation: |
   Remove the following permissions from the roles. Also, consider reassigning the
   permissions to a new, trusted role or to an existing, trusted role.
-  
+
   Untrusted Role | Administrative Permission(s)
       --- | ---
       {{# rows }}

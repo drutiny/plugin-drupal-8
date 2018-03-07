@@ -11,7 +11,7 @@ description: |
   from Drupal.
 remediation: Set the configuration object `system.performance` key `cache.page.max_age` to {{value}}.
 success: |
-  Page cache expiry is set to {{value}} seconds which meets performance
+  Page cache expiry is set to *{{reading}}* seconds which meets performance
   requirments.
 failure: |
   Page cache expiry of {{reading}} seconds does not meet the minimum

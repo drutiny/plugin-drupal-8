@@ -5,9 +5,15 @@ namespace Drutiny\Plugin\Drupal8\Audit;
 use Drutiny\Audit;
 use Drutiny\Sandbox\Sandbox;
 use Drutiny\Driver\DrushFormatException;
+use Drutiny\Annotation\Param;
 
 /**
  * Check a purge plugin exists.
+ * @Param(
+ *  name = "plugin",
+ *  description = "The plugins to check exists",
+ *  type = "string"
+ * )
  */
 class PurgePluginExists extends Audit {
 

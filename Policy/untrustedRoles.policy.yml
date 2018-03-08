@@ -2,14 +2,14 @@ title: "Untrusted Roles with administrative permissions"
 name: Drupal-8:UntrustedRoles
 class: \Drutiny\Plugin\Drupal8\Audit\UntrustedRoles
 tags:
+  - Drupal 8
   - Best Practice
   - Security
-  - Drupal 8
+
 description: |
   Make sure administrative permissions has not been assigned to untrusted roles.
 remediation: |
-  Remove the following permissions from the roles. Also, consider reassigning the
-  permissions to a new, trusted role or to an existing, trusted role.
+  Remove the administrative permissions from the corresponding untrusted role as identified below.
 
   Untrusted Role | Administrative Permission(s)
       --- | ---
@@ -18,10 +18,10 @@ remediation: |
       {{/ rows }}
 
 success: |
-  Untrusted roles do not have administrative permissions.
+  Untrusted roles do not have administrative permissions assigned to them.
 
 failure: |
-  Administrative permissions are assigned to untrusted roles.
+  Administrative permissions have been assigned to untrusted roles.
 
 parameters:
   untrusted_roles:

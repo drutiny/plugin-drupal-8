@@ -1,3 +1,0 @@
-title: Test audit
-policies:
-    Drupal-8:UntrustedRoles: {}

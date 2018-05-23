@@ -23,16 +23,21 @@ class PurgePluginExists extends Audit {
   public function audit(Sandbox $sandbox) {
     $plugin_name = $sandbox->getParameter('plugin');
 
-    $config = $sandbox->drush([
-      'format' => 'json',
-      'include-overridden' => NULL,
-      ])->configGet('purge.plugins');
-    $plugins = $config['purgers'];
+    try {
+      $config = $sandbox->drush([
+        'format' => 'json',
+        'include-overridden' => NULL,
+        ])->configGet('purge.plugins');
+      $plugins = $config['purgers'];
 
-    foreach ($plugins as $plugin) {
-      if ($plugin['plugin_id'] == $plugin_name) {
-        return TRUE;
+      foreach ($plugins as $plugin) {
+        if ($plugin['plugin_id'] == $plugin_name) {
+          return TRUE;
+        }
       }
+    }
+    catch (\Drutiny\Driver\DrushFormatException $e) {
+      $sandbox->setParameter('exception', $e->getMessage());
     }
 
     return FALSE;

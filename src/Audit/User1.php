@@ -5,9 +5,22 @@ namespace Drutiny\Plugin\Drupal8\Audit;
 use Drutiny\Audit;
 use Drutiny\Sandbox\Sandbox;
 use Drutiny\RemediableInterface;
+use Drutiny\Annotation\Param;
 
 /**
  * User #1
+ * @Param(
+ *  name = "email",
+ *  description = "The email the user account should be.",
+ * )
+ * @Param(
+ *  name = "blacklist",
+ *  description = "List of usernames that are not acceptable.",
+ * )
+ * @Param(
+ *  name = "status",
+ *  description = "Whether the account should be enabled or disabled.",
+ * )
  */
 class User1 extends Audit implements RemediableInterface {
 

@@ -5,9 +5,15 @@ namespace Drutiny\Plugin\Drupal8\Audit;
 use Drutiny\Audit;
 use Drutiny\Sandbox\Sandbox;
 use Drutiny\Driver\DrushFormatException;
+use Drutiny\Annotation\Param;
 
 /**
  *  Cron last run.
+ * @Param(
+ *  name = "cron_max_interval",
+ *  type = "integer",
+ *  description = "The maximum interval between "
+ * )
  */
 class CronHasRun extends Audit {
 

@@ -18,10 +18,13 @@ class NoExperimentalCore extends Audit {
 
     $info = $sandbox->drush([
       'format' => 'json',
-      'package' => 'Core (Experimental)',
       'status' => 'Enabled',
       'core',
     ])->pmList();
+
+    $info = array_filter($info, function ($package) {
+      return strpos('experimental', strtolower($package['package'])) !== FALSE;
+    });
 
     if (empty($info)) {
       return TRUE;

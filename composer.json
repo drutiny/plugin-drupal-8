@@ -13,7 +13,7 @@
         "source": "https://github.com/drutiny/plugin-drupal-8"
     },
     "require": {
-        "drutiny/drutiny": "2.1.*@dev",
+        "drutiny/drutiny": "2.1.*@dev || 2.2.*@dev",
         "drutiny/http": "2.x-dev",
         "symfony/yaml": "^3.2"
     },

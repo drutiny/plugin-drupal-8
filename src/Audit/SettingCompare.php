@@ -5,9 +5,26 @@ namespace Drutiny\Plugin\Drupal8\Audit;
 use Drutiny\Audit;
 use Drutiny\Sandbox\Sandbox;
 use Drutiny\Audit\AbstractComparison;
+use Drutiny\Annotation\Param;
+use Drutiny\Annotation\Token;
 
 /**
  * Check a configuration is set correctly.
+ * @Param(
+ *   name = "key",
+ *   description = "The settings key to evauate",
+ *   type = "string"
+ * )
+ * @Param(
+ *   name = "value",
+ *   description = "The value of the key you want to compare against.",
+ *   type = "string"
+ * )
+ * @Token(
+ *   name = "reading",
+ *   description = "The value retrieve from the key in the Drupal site.",
+ *   type = "mixed"
+ * )
  */
 class SettingCompare extends AbstractComparison {
 

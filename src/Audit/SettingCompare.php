@@ -25,8 +25,15 @@ use Drutiny\Annotation\Token;
  *   description = "The value retrieve from the key in the Drupal site.",
  *   type = "mixed"
  * )
+ * @Param(
+ *  name = "conditional_expression",
+ *  type = "string",
+ *  default = "true",
+ *  description = "The expression language to evaludate. See https://symfony.com/doc/current/components/expression_language/syntax.html"
+ * )
  */
 class SettingCompare extends AbstractComparison {
+  use ConditionalTrait;
 
   /**
    * @inheritDoc
